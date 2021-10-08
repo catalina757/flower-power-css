@@ -18,6 +18,12 @@ body{
     max-width:25rem;
     aspect-ratio: 1;
     flex-wrap: wrap;
+    animation-name: rotate-flower;
+    transform: rotate(0deg);
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 .blue-circle {
@@ -37,12 +43,12 @@ body{
     transform: rotate(45deg);
 }
 
-.circle-bottom-right-blue {
-    transform: rotate(135deg);
-}
-
 .circle-bottom-left-blue {
     transform: rotate(-135deg);
+}
+
+.circle-bottom-right-blue {
+    transform: rotate(135deg);
 }
 
 .yellow-circle {
@@ -52,3 +58,20 @@ body{
     border-radius: 50%;
     position: absolute;
 }
+
+@keyframes rotate-flower {
+    0%   {
+        transform: rotate(0deg);
+    }
+    25%  {
+        transform: rotate(45deg);
+    }
+    50%  {
+        transform: rotate(90deg);
+    }
+    75%  {
+        transform: rotate(135deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
