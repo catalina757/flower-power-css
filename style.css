@@ -60,18 +60,19 @@ body{
 }
 
 @keyframes rotate-flower {
-    0%   {
+    0% {
         transform: rotate(0deg);
     }
-    25%  {
+    25% {
         transform: rotate(45deg);
     }
-    50%  {
+    50% {
         transform: rotate(90deg);
     }
-    75%  {
+    75% {
         transform: rotate(135deg);
     }
     100% {
         transform: rotate(180deg);
     }
+}
