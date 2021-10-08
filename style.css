@@ -57,6 +57,11 @@ body{
     background-color: yellow;
     border-radius: 50%;
     position: absolute;
+    animation-name: smaller;
+    animation-duration: 3s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
 @keyframes rotate-flower {
@@ -74,5 +79,29 @@ body{
     }
     100% {
         transform: rotate(180deg);
+    }
+}
+
+@keyframes smaller {
+    0% {
+        width: 7rem;
+    }
+    25% {
+        width: 5rem;
+    }
+    50% {
+        width: 3rem;
+    }
+    75% {
+        width: 5rem;
+    }
+    100% {
+        width: 7rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .blue-circle {
+        width: 8rem;
     }
 }
