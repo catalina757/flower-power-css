@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: dodgerblue;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    max-width:25rem;
+    aspect-ratio: 1;
+    flex-wrap: wrap;
+}
+
+.blue-circle {
+    width: 10rem;
+    aspect-ratio: 1/0.5;
+    background-color: cadetblue;
+    margin: 15px;
+    border-radius: 10rem 10rem 0 0;
+
+}
+
+.circle-top-left-blue {
+    transform: rotate(-45deg);
+}
+
+.circle-top-right-blue {
+    transform: rotate(45deg);
+}
+
+.circle-bottom-right-blue {
+    transform: rotate(135deg);
+}
+
+.circle-bottom-left-blue {
+    transform: rotate(-135deg);
+}
+
+.yellow-circle {
+    width: 7rem;
+    aspect-ratio: 1/1;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+}
